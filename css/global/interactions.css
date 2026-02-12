@@ -1,0 +1,307 @@
+/* =========================
+   GLOBAL TRANSITIONS
+========================= */
+
+.nav-main a,
+.nav-cta,
+.btn-cta,
+.btn-secondary,
+.footer-links a {
+  transition: all 0.25s ease;
+}
+
+/* =========================
+   NAV INTERACTIONS
+========================= */
+
+.nav-main a:hover,
+.mobile-nav a:hover {
+  color: var(--primary);
+}
+
+.nav-cta:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.nav-cta:focus,
+.nav-cta:active,
+.nav-cta:visited {
+  text-decoration: none !important;
+}
+
+/* =========================
+   HERO TEXT INTERACTION
+========================= */
+
+.hero-headline a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-main);
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-headline a:hover {
+  color: var(--primary);
+  transform: scale(1.05) translateX(6px);
+}
+
+.hero-headline a:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
+
+.hero-headline a:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   BUTTON HOVER STATES
+========================= */
+
+.btn-cta:hover {
+  background: #b91c1c;
+}
+
+.btn-secondary:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+}
+.dropdown a::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 14px;
+
+  background: rgba(15, 23, 42, 0.35);
+  flex-shrink: 0;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =========================
+   NAV DROPDOWN (PROFESSIONAL)
+========================= */
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  min-width: 260px;
+  padding: 14px 0;
+
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+
+  box-shadow:
+    0 24px 48px rgba(15, 23, 42, 0.14),
+    0 8px 20px rgba(15, 23, 42, 0.08);
+
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+
+  padding: 14px 18px;
+  margin: 4px 0;
+
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #0f172a;
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.dropdown a:hover {
+  background: rgba(37, 99, 235, 0.10);
+  color: var(--primary);
+
+  transform: translateX(6px);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.18);
+}
+
+.dropdown a:hover::before {
+  background: var(--primary);
+  transform: scale(1.4);
+}
+
+
+
+
+.has-dropdown:hover .dropdown {
+  display: flex;
+}
+
+.has-dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 18px;
+}
+
+/* =========================
+   MOBILE NAV TOGGLE
+========================= */
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--text-main);
+}
+
+/* =========================
+   HERO FLOATING LIGHT
+========================= */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: 0;
+
+  background: radial-gradient(
+    600px 600px at 30% 30%,
+    rgba(37, 99, 235, 0.12),
+    transparent 70%
+  );
+
+  animation: floatLight 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes floatLight {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(200px, 120px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* =========================
+   SERVICE CARD INTERACTION
+========================= */
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* =========================
+   BLOG & CARD HOVERS
+========================= */
+
+.blog-card,
+.authority-card,
+.team-card.detailed {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover,
+.authority-card:hover,
+.team-card.detailed:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* =========================
+   FOOTER INTERACTIONS
+========================= */
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.footer-cta a {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(37,99,235,0.35);
+}
+
+/* =========================
+   CAROUSEL INTERACTION STATES
+========================= */
+
+.carousel-track {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.carousel-slide.is-center {
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: var(--shadow-strong);
+}
+
+.carousel-slide.is-adjacent {
+  transform: scale(0.95);
+  opacity: 0.85;
+}
+
+/* =========================
+   SCROLL REVEAL STATE
+========================= */
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

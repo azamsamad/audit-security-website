@@ -1,0 +1,401 @@
+/* =========================
+   LOGO & BRAND
+========================= */
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0B1220;
+  letter-spacing: 0.4px;
+}
+
+/* =========================
+   NAV LINKS & CTA
+========================= */
+
+.nav-main a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0F172A;
+  padding: 0 2px;
+}
+
+.nav-main a.active {
+  color: var(--primary);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 44px;
+  line-height: 1;
+  box-sizing: border-box;
+
+  padding: 12px 22px;
+  border-radius: 999px;
+
+  font-size: 14.5px;
+  font-weight: 600;
+
+  text-decoration: none !important;
+  color: var(--primary);
+
+  border: 1.5px solid var(--primary);
+  background: rgba(37,99,235,0.06);
+}
+
+/* =========================
+   MOBILE NAV ITEMS
+========================= */
+
+.mobile-nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mobile-cta {
+  margin-top: 12px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-cta {
+  background: var(--accent);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(220,38,38,0.25);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* =========================
+   HERO TEXT ELEMENTS
+========================= */
+
+.hero h1 {
+  font-size: clamp(38px, 4.2vw, 52px);  /* ⬇ proper enterprise scale */
+  line-height: 1.08;
+  letter-spacing: -0.4px;
+  max-width: 520px;
+}
+
+.hero p {
+  font-size: 15.5px;
+  line-height: 1.55;
+  max-width: 460px;
+}
+
+.hero .eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  display: inline-block;
+  margin-top: 32px;     /* ⬅️ THIS fixes the placement */
+  margin-bottom: 18px;
+}
+
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-trust {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   CARDS (GENERIC)
+========================= */
+
+.review-card,
+.threat-card,
+.blog-card,
+.authority-card,
+.stat,
+.client-card,
+.point-card,
+.quality-card,
+.work-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+/* individual padding / radius */
+
+.review-card {
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.threat-card {
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.blog-card {
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.authority-card {
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.stat {
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.client-card {
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.point-card {
+  padding: 20px 24px;
+  border-radius: 16px;
+}
+
+.quality-card {
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.work-item {
+  padding: 18px 22px;
+  border-radius: 14px;
+}
+
+/* =========================
+   PILLS / TAGS / BADGES
+========================= */
+
+.service-pill,
+.service-outcomes span,
+.expertise li,
+.team-hero-signals span,
+.principle {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.service-pill {
+  padding: 18px 24px;
+  font-weight: 500;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+}
+
+.service-outcomes span {
+  background: rgba(37,99,235,0.15);
+}
+
+.expertise li {
+  font-size: 12px;
+  background: rgba(37,99,235,0.12);
+}
+
+.team-hero-signals span {
+  background: rgba(37,99,235,0.08);
+}
+
+.principle {
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+}
+
+/* =========================
+   HONEYCOMB HEX CONTENT
+========================= */
+
+.hex {
+  clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );
+
+  background: linear-gradient(
+    135deg,
+    rgba(37,99,235,0.18),
+    rgba(220,38,38,0.18)
+  );
+
+  box-shadow: 0 20px 40px rgba(15,23,42,0.08);
+  border-radius: 6px;
+}
+
+.hex span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0F172A;
+  text-align: center;
+}
+
+
+
+/* =========================
+   FOOTER POLISH
+========================= */
+
+/* overall footer feel */
+.site-footer {
+  background:
+    radial-gradient(
+      700px 300px at 20% 0%,
+      rgba(37,99,235,0.05),
+      transparent 70%
+    ),
+    linear-gradient(
+      180deg,
+      #F8FAFC 0%,
+      #F1F5F9 100%
+    );
+}
+
+/* column titles */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: var(--text-main);
+}
+
+/* lists clean-up */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* links */
+.footer-links a {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+/* brand text */
+.footer-brand h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 300px;
+}
+
+/* subtle divider accent under brand */
+.footer-brand::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 18px;
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    transparent
+  );
+}
+
+/* contact block */
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.footer-contact strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.footer-contact a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--primary);
+}
+
+/* soften the vertical divider */
+.footer-contact {
+  border-left: 1px solid rgba(15,23,42,0.08);
+  padding-left: 24px;
+}

@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL BASE (SAFE)
+========================= */
+
+:root {
+  /* Backgrounds */
+  --bg-main: #F5F7FB;
+  --bg-surface: #FFFFFF;
+  --bg-glass: rgba(255,255,255,0.75);
+
+  /* Text */
+  --text-main: #0F172A;
+  --text-muted: #475569;
+
+  /* Brand */
+  --primary: #2563EB;
+  --accent: #DC2626;
+
+  /* Borders & effects */
+  --border: rgba(15,23,42,0.12);
+  --shadow-soft: 0 10px 30px rgba(15,23,42,0.08);
+  --shadow-strong: 0 20px 60px rgba(15,23,42,0.15);
+}
+
+/* =========================
+   BODY (UNCHANGED BEHAVIOR)
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+
+  background:
+    radial-gradient(
+      900px 500px at 20% 0%,
+      rgba(37,99,235,0.08),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 500px at 90% 30%,
+      rgba(220,38,38,0.06),
+      transparent 60%
+    ),
+    var(--bg-main);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   GLOBAL CANVAS BACKGROUND
+   (SAFE – DOES NOT TOUCH LAYOUT)
+========================= */
+
+#bg-network {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: -1;          /* stays behind everything */
+  pointer-events: none;
+}
+
+/* =========================
+   SCROLL REVEAL BASE
+========================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* =========================
+   SECTION DIVIDER
+========================= */
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border),
+    transparent
+  );
+  margin: 56px 0;
+}

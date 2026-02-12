@@ -1,0 +1,11 @@
+@import "./global/base.css";
+@import "./global/layout.css";
+@import "./global/component.css";
+@import "./global/interactions.css";
+@import "./global/responsive.css";
+
+@import "./home.css";
+@import "./services.css";
+@import "./about.css";
+@import "./team.css";
+@import "./blog.css";

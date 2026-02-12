@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/global/base.css">
+  <link rel="stylesheet" href="css/global/interactions.css">
+  <link rel="stylesheet" href="css/global/layout.css">
+  <link rel="stylesheet" href="css/global/component.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Bell Cyber</title>
+</head>
+
+<body class="home-page">
+<canvas id="bg-network"></canvas>
+
+
+<header class="header">
+  <div class="container nav">
+
+    <div class="logo">Bell Cyber</div>
+
+    <nav class="nav-main">
+      <a href="#" class="active">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+          <a href="#">Security Audits</a>
+          <a href="#">Compliance & Risk</a>
+          <a href="#">Advisory Consulting</a>
+          <a href="#">Cloud Security</a>
+          <a href="#">Penetration Testing</a>
+        </div>
+      </div>
+
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#" class="nav-cta">Schedule Audit</a>
+
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#" class="active">Home</a>
+  <a href="services.html">Services</a>
+  <a href="#">About</a>
+  <a href="#">Team</a>
+  <a href="#">Blog</a>
+  <a href="#" class="mobile-cta">Schedule Audit</a>
+</nav>
+
+<!-- ✅ FIX #1: ADD page-main wrapper (NO CONTENT CHANGE) -->
+<main class="page-main">
+
+<!-- HERO -->
+<section class="hero">
+  
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <span class="eyebrow">ENTERPRISE CYBERSECURITY & COMPLIANCE</span>
+
+      <h1 class="hero-headline">
+        <a href="services.html#audit">Audit.</a><br>
+        <a href="services.html#advisory">Advisory.</a><br>
+        <a href="services.html#secure">Secure.</a><br>
+        <a href="services.html#comply">Comply.</a>
+      </h1>
+
+      <p>
+        Bell Cyber helps organizations strengthen security, manage risk,
+        and stay compliant with industry standards.
+      </p>
+
+      <div class="hero-actions">
+        <a href="mailto:contact@bellcyber.com" class="btn-cta">
+  Request Consultation
+</a>
+
+        <a href="services.html" class="btn-secondary">Our Services</a>
+      </div>
+
+      <div class="hero-trust">
+        <span>ISO 27001</span>
+        <span>SOC 2</span>
+        <span>PCI DSS</span>
+      </div>
+    </div>
+
+    <!-- ✅ FIX #2: REMOVE duplicate hero-visual -->
+    <div class="hero-visual">
+      <div class="honeycomb">
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+        <div class="hex"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="home-threats">
+  <div class="container">
+    <h2>Common Threats Facing Growing Businesses</h2>
+
+    <div class="threat-grid">
+      <div class="threat-card reveal-delay-1">
+        <h3>Phishing & Credential Theft</h3>
+        <p>Targeted attacks exploiting employees and weak MFA.</p>
+      </div>
+
+      <div class="threat-card reveal-delay-2">
+        <h3>Cloud Misconfigurations</h3>
+        <p>Public storage, over-permissive IAM roles.</p>
+      </div>
+
+      <div class="threat-card reveal-delay-3">
+        <h3>Ransomware</h3>
+        <p>Lack of backups and endpoint protection.</p>
+      </div>
+
+      <div class="threat-card reveal-delay-4">
+        <h3>Third-Party Risk</h3>
+        <p>Vendors becoming attack entry points.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-services">
+  <div class="container">
+    <h2>Audit & Security Services</h2>
+    <p class="section-subtitle center">
+      Comprehensive assessments covering compliance, cloud, and enterprise risk.
+    </p>
+
+    <div class="services-stack">
+      <div class="service-pill">ISO 27001 Audit</div>
+      <div class="service-pill">SOC 2 Readiness</div>
+      <div class="service-pill">PCI DSS Assessment</div>
+      <div class="service-pill">VAPT</div>
+      <div class="service-pill">Cloud Security Review</div>
+      <div class="service-pill">Risk Assessment</div>
+      <div class="service-pill">Vendor Risk Audit</div>
+      <div class="service-pill">Application Security Testing</div>
+      <div class="service-pill">Infrastructure Security Audit</div>
+      <div class="service-pill">Security Program Design</div>
+    </div>
+  </div>
+</section>
+
+<section class="home-reviews">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <p>“Bell Cyber helped us move beyond compliance and actually understand our risk.”</p>
+        <span>— CTO, SaaS Company</span>
+      </div>
+
+      <div class="review-card">
+        <p>“Clear, actionable, and deeply practical security guidance.”</p>
+        <span>— Head of IT, FinTech</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-form">
+  <div class="container">
+    <h2>Talk to Our Security Experts</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Work Email">
+      <input type="text" placeholder="Company Name">
+      <textarea placeholder="How can we help?"></textarea>
+
+      <button type="submit" class="btn-cta">Request Consultation</button>
+    </form>
+  </div>
+</section>
+
+<section class="home-trust">
+  <div class="container">
+    <p class="trust-label">Trusted by teams at</p>
+    <div class="trust-logos">
+      <span>FinTech Co</span>
+      <span>SaaS Corp</span>
+      <span>HealthTech</span>
+      <span>Enterprise IT</span>
+      <span>Cloud Native</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h3>Bell Cyber</h3>
+      <p>
+        Enterprise-grade cybersecurity, compliance,
+        and advisory services for modern organizations.
+      </p>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Security Audits</li>
+        <li>Compliance & Risk</li>
+        <li>Cloud Security</li>
+        <li>Penetration Testing</li>
+        <li>Advisory Consulting</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+
+      <p>
+        <strong>Bell Cyber</strong><br>
+        Cybersecurity & Compliance Advisory
+      </p>
+
+      <p>
+        📍 Hyderabad, India<br>
+        Serving clients globally
+      </p>
+
+      <p>
+        ✉️ <a href="mailto:contact@bellcyber.com">contact@bellcyber.com</a><br>
+        ☎️ <a href="tel:+919999999999">+91 99999 99999</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="container footer-bottom">
+    <span>© 2026 Bell Cyber. All rights reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

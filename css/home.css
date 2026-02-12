@@ -1,0 +1,150 @@
+
+
+/* =========================
+   HERO BACKGROUND (HOME ONLY)
+========================= */
+
+.home-page .hero {
+  background:
+    radial-gradient(
+      1000px 600px at 15% 20%,
+      rgba(37,99,235,0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 85% 30%,
+      rgba(220,38,38,0.10),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #F5F7FB 0%,
+      #EEF2F8 100%
+    );
+}
+
+/* =========================
+   HERO CONTENT (HOME)
+========================= */
+
+.home-page .hero-content {
+  text-align: left;
+}
+
+.home-page .hero-content > * {
+  margin-bottom: 20px;
+}
+
+.home-page .hero-content > *:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* =========================
+   TRUST SECTION
+========================= */
+
+.home-trust {
+  text-align: center;
+}
+
+.trust-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.trust-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* =========================
+   THREATS SECTION
+========================= */
+
+.home-threats {
+  background: rgba(37,99,235,0.03);
+}
+
+/* layout grid already global-safe */
+.threat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   SERVICES STACK (HOME)
+========================= */
+
+.services-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 20px 28px;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================
+   REVIEWS SECTION
+========================= */
+
+.home-reviews {
+  background: rgba(220,38,38,0.03);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* =========================
+   CONTACT FORM (HOME)
+========================= */
+
+.home-form {
+  text-align: center;
+}
+
+/* =========================
+   HERO VISUAL (HOME ONLY)
+========================= */
+
+.home-page .hero-visual {
+  justify-content: center;
+}
+
+
+
+
+
+
+
+.home-page .hero {
+  align-items: start;
+  min-height: auto;
+  padding-bottom: 64px;
+}
+
+
+
+/* overide layout */
+/* =========================
+   HERO SIZE REFINEMENT
+========================= */
+
+.home-page .hero {
+  min-height: 72vh;        /* ↓ from ~100vh */
+  padding-top: 72px;       /* ↓ reduces vertical bulk */
+  padding-bottom: 56px;    /* controlled exit spacing */
+  align-items: start;      /* prevent vertical centering */
+}

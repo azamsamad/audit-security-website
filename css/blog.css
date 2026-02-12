@@ -1,0 +1,101 @@
+/* =========================
+   BLOG PAGE BASE
+========================= */
+
+.blog-page {
+  background: var(--bg-main);
+}
+
+/* =========================
+   BLOG HERO
+========================= */
+
+.blog-hero {
+  padding: 72px 0 56px;
+  background:
+    radial-gradient(
+      800px 400px at 20% 0%,
+      rgba(37,99,235,0.08),
+      transparent 60%
+    );
+}
+
+.blog-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.blog-hero h1 {
+  max-width: 760px;
+  font-size: clamp(36px, 4.5vw, 52px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.blog-hero p {
+  max-width: 620px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+/* =========================
+   BLOG LIST
+========================= */
+
+.blog-list {
+  padding: 64px 0 120px;
+}
+
+/* =========================
+   BLOG CARD CONTENT
+========================= */
+
+.blog-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.blog-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.blog-link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FEATURED BLOG CARD
+========================= */
+
+.blog-card.featured {
+  border: 2px solid rgba(37,99,235,0.25);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37,99,235,0.06),
+      rgba(220,38,38,0.04)
+    );
+}
